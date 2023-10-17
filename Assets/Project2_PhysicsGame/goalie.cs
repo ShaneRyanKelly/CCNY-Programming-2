@@ -7,7 +7,7 @@ public class goalie : NPC
 
     //defining our own update or start here will override the update function from the NPC class
     //for now, leave these commented out to better practice/test how inheritance works
-    //void Start() {}
+    void Start() {}
     //void Update() {}
     
     //because the base NPC Move() is protected, we must also make this override protected

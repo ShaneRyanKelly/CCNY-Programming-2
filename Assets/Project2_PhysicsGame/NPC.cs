@@ -11,13 +11,14 @@ public class NPC : MonoBehaviour
     public GameObject myTarget;
     public NPC myScript;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         //find the rigidbody and this script
         myRB = GetComponent<Rigidbody>();
         //GetComponent will find any of a type NPC, including subclasses
         myScript = GetComponent<NPC>();
     }
+
     // Update is called once per frame
     void Update()
     {
